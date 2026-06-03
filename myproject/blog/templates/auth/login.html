@@ -5,6 +5,46 @@
     <link href="{% static 'src/styles.css' %}" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-2xl font-bold text-blue-500 bg-red-400">Login</h1>
+    <section class="bg-gray-50">
+      <div class="flex min-h-screen items-center justify-center px-6 py-8">
+        <div class="w-full max-w-md rounded-lg bg-white p-8 shadow">
+          <h1 class="mb-6 text-2xl font-bold text-gray-900">Login</h1>
+          <form class="space-y-4" action="#" method="post">
+            <div>
+              <label for="email" class="mb-2 block text-sm font-medium text-gray-900">
+                User Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="block w-full rounded-lg border border-gray-300 p-2.5 text-sm text-gray-900"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="password" class="mb-2 block text-sm font-medium text-gray-900">
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="block w-full rounded-lg border border-gray-300 p-2.5 text-sm text-gray-900"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
