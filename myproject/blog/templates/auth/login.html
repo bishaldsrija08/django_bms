@@ -9,7 +9,8 @@
       <div class="flex min-h-screen items-center justify-center px-6 py-8">
         <div class="w-full max-w-md rounded-lg bg-white p-8 shadow">
           <h1 class="mb-6 text-2xl font-bold text-gray-900">Login</h1>
-          <form class="space-y-4" action="#" method="post">
+          <form class="space-y-4" action="/blog/login" method="post">
+            {% csrf_token %}
             <div>
               <label for="email" class="mb-2 block text-sm font-medium text-gray-900">
                 User Email
